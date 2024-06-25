@@ -115,7 +115,7 @@ nav .navigation .profile-img {
 }
 
 section{
-    padding: 18px 187px;
+    padding: 18px 187px 180px 187px;
 }
 
 section .heading{
@@ -851,32 +851,50 @@ button span {
     font-size: 26px;
 }
 
-.notice-dark .notice{
+.notice-dark .notice,.board{
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 255px;
     top: -41px;
+    rotate: -90deg;
 }
 .notice-dark .board{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
     right: 105px;
     top: -30px;
 }
 
-.notice-dark .notice h4{
+.notice-dark .notice h4, .board h4{
     color: #fff;
     writing-mode: vertical-lr;
     text-orientation:upright;
-    rotate: -90deg;
     font-weight: 300;
 }
-.notice-dark .board h4{
-    color: #fff;
-    writing-mode: vertical-lr;
-    text-orientation:upright;
-    rotate: -90deg;
-    font-weight: 300;
+
+.float-icon{
+    height: 385px;
+    width: 105px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.float-icon div{
+    height: 85px;
+    width: 85px;
+    background: #0029FF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float-icon div img{
+    height: 40px;
+    width: 37px;
+    object-fit: cover;
+    object-position: center;
 }
